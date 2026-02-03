@@ -82,54 +82,141 @@ section {
         .service { background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); text-align: center; }
         .service i { font-size: 3rem; color: #007BFF; margin-bottom: 1rem; }
         .portfolio { background-color: #e9ecef; }
-     .portfolio-img {<section id="portfolio" class="portfolio">
-  <h2>Portfolio</h2>
+    <section id="portfolio" class="portfolio">
+  <h2>Our Work</h2>
+  <p class="portfolio-subtitle">Real results for local businesses in Gojra</p>
+
   <div class="portfolio-grid">
 
-    <div class="portfolio-item">
-      <img src="images/seo-project.jpg" alt="SEO Campaign for Gojra Business" class="portfolio-img">
-      <h3>SEO Campaign for Local Retailer</h3>
-      <p>Increased organic traffic by 150% for a Gojra retailer using targeted SEO for Gojra Businesses.</p>
+    <div class="portfolio-card">
+      <div class="portfolio-image">
+        <img src="images/seo-project.jpg" alt="SEO Campaign for Gojra Business">
+        <div class="portfolio-overlay">
+          <h3>SEO Campaign</h3>
+          <p>+150% Organic Traffic</p>
+        </div>
+      </div>
+      <div class="portfolio-content">
+        <h4>Local Retail SEO</h4>
+        <p>Ranked a Gojra retailer on Google and increased organic traffic by 150%.</p>
+      </div>
     </div>
 
-    <div class="portfolio-item">
-      <img src="images/website-project.jpg" alt="Website Development for Gojra Service" class="portfolio-img">
-      <h3>Website for Gojra Service Provider</h3>
-      <p>Built a mobile-responsive site that boosted leads by 200%.</p>
+    <div class="portfolio-card">
+      <div class="portfolio-image">
+        <img src="images/website-project.jpg" alt="Website Development for Gojra Service">
+        <div class="portfolio-overlay">
+          <h3>Website Development</h3>
+          <p>+200% Leads</p>
+        </div>
+      </div>
+      <div class="portfolio-content">
+        <h4>Service Provider Website</h4>
+        <p>Built a mobile-first website that doubled leads for a local service business.</p>
+      </div>
     </div>
 
-    <div class="portfolio-item">
-      <img src="images/ads-project.jpg" alt="Google Ads Campaign for Gojra Business" class="portfolio-img">
-      <h3>Google Ads for Gojra Restaurant</h3>
-      <p>Drove 300% more bookings with localized ads.</p>
+    <div class="portfolio-card">
+      <div class="portfolio-image">
+        <img src="images/ads-project.jpg" alt="Google Ads Campaign for Gojra Business">
+        <div class="portfolio-overlay">
+          <h3>Google Ads</h3>
+          <p>+300% Bookings</p>
+        </div>
+      </div>
+      <div class="portfolio-content">
+        <h4>Restaurant Ads Campaign</h4>
+        <p>Generated 3x more bookings using localized Google Ads strategy.</p>
+      </div>
     </div>
-
   </div>
 </section>
-  width: 100%;
+   .portfolio {
+  background-color: #e9ecef;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.portfolio h2 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.portfolio-subtitle {
+  color: #555;
+  margin-bottom: 2.5rem;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.portfolio-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.portfolio-image {
+  position: relative;
   height: 200px;
+  overflow: hidden;
+}
+
+.portfolio-image img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  border-radius: 5px;
-  margin-bottom: 15px;}
- <img src="image.jpg" width="300" height="200" alt="...">
-     .portfolio-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
-        .portfolio-item { background: white; padding: 1rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-        .portfolio-item img { width: 100%; height: 200px; object-fit: cover; border-radius: 5px; }
-        .testimonials { background-color: white; }
-        .testimonial { margin-bottom: 2rem; padding: 1rem; border-left: 5px solid #007BFF; }
-        .contact { background-color: #f8f9fa; }
-        .contact-form { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
-        .contact-form input, .contact-form textarea { padding: 0.75rem; border: 1px solid #ccc; border-radius: 5px; }
-        .contact-form button { grid-column: span 2; }
-        .map { margin-top: 2rem; }
-        footer { background-color: #333; color: white; text-align: center; padding: 1rem; }
-        @media (max-width: 768px) {
-            nav ul { display: none; flex-direction: column; position: absolute; top: 100%; left: 0; width: 100%; background: white; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-            nav ul.show { display: flex; }
-            .hamburger { display: block; }
-            .hero h1 { font-size: 2rem; }
-            .contact-form { grid-template-columns: 1fr; }
-        }
+}
+
+.portfolio-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 123, 255, 0.85);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  text-align: center;
+}
+
+.portfolio-card:hover .portfolio-overlay {
+  opacity: 1;
+}
+
+.portfolio-overlay h3 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.portfolio-overlay p {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+.portfolio-content {
+  padding: 1.2rem;
+.portfolio-content h4 {
+  margin-bottom: 0.4rem;
+  font-size: 1.2rem;
+
+.portfolio-content p {
+  color: #555;
+  font-size: 0.95rem'
+/* Mobile friendly */
+@media (max-width: 600px) {
+  .portfolio h2 {
+    font-size: 1.8rem;
     </style>
 </head>
 <!-- Google tag (gtag.js) -->
@@ -242,8 +329,7 @@ section {
             <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
             <button type="submit" class="btn">Contact Us</button>
         </form>
-        <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3444.1234!2d72.6833!3d31.1500!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3922b8b8b8b8b8b8%3A0x1234567890abcdef!2sGojra%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1234567890123!5m2!1sen!2s" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <div class="map"
         </div><section id="location">
   <h2>Our Location</h2>
   <iframe 
