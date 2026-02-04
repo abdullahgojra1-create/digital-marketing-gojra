@@ -1,96 +1,541 @@
 <!DOCTYPE html>
-<html lang="en">                                                                                                                                                                                                                             
- <img src="image.jpg" width="300" height="200" alt="...">
-    <head>     
- <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "Digital Marketing Gojra",
-  "url": "https://abdullahgojra1-create.github.io/digital-marketing-gojra/",
-  "logo": "https://abdullahgojra1-create.github.io/digital-marketing-gojra/logo.png",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Gulshan Mehmood Colony, Street 2",
-    "addressLocality": "Gojra",
-    "addressCountry": "PK"
-  },
-  "telephone": "+92 321 2639092"
-}
-</script>
-        <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8LE2KR3BKL"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Digital Marketing Gojra - Boost Your Business Online</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Expert Digital Marketing Gojra services including SEO, Social Media Marketing, Google Ads, Website Development, and Branding for local businesses. Boost your online presence in Gojra.">
+  <meta name="keywords" content="Digital Marketing Gojra, SEO Gojra, Social Media Marketing Gojra, Google Ads Gojra, Website Development Gojra, Branding Gojra">
 
-  gtag('config', 'G-8LE2KR3BKL');
-</script>   
-        <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="description" content="Expert Digital Marketing Gojra services including SEO, Social Media Marketing, Google Ads, Website Development, and Branding for local businesses. Boost your online presence in Gojra.">
-    <meta name="keywords" content="Digital Marketing Gojra, SEO for Gojra Businesses, Social Media Marketing Gojra, Google Ads Gojra, Website Development Gojra, Branding Gojra"
-        <title>Digital Marketing Gojra - Boost Your Business Online</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-      <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8LE2KR3BKL"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-8LE2KR3BKL');
-</script>   
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; color: #333; background-color: #f8f9fa; }
-  <section id="services">
-  <h2>Our Services</h2>
-  <ul>
-    <li>SEO (Search Engine Optimization)</li>
-    <li>Social Media Marketing</li>
-    <li>Website Development</li>
-    <li>Google Business Profile Optimization</li>
-  </ul>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Digital Marketing Gojra",
+    "url": "https://abdullahgojra1-create.github.io/digital-marketing-gojra/",
+    "logo": "https://abdullahgojra1-create.github.io/digital-marketing-gojra/logo.png",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Gulshan Mehmood Colony, Street 2",
+      "addressLocality": "Gojra",
+      "addressCountry": "PK"
+    },
+    "telephone": "+92 321 2639092"
+  }
+  </script>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8LE2KR3BKL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-8LE2KR3BKL');
+  </script>
+
+  <style>
+    :root {
+      --primary: #007BFF;
+      --dark: #212529;
+      --light: #f8f9fa;
+      --gray: #6c757d;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background-color: var(--light);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Header */
+    header {
+      background: #fff;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav {
+      max-width: 1200px;
+      margin: auto;
+      padding: 1rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      color: var(--gray);
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: var(--primary);
+    }
+
+    .hamburger {
+      display: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+
+    /* Hero */
+    .hero {
+      background: linear-gradient(rgba(0,123,255,0.85), rgba(0,86,179,0.85)),
+                  url("https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=1400&q=80");
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      text-align: center;
+      padding: 7rem 1.5rem;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: auto;
+      margin-bottom: 2rem;
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--primary);
+      color: #fff;
+      padding: 0.8rem 1.7rem;
+      border-radius: 50px;
+      font-weight: 600;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    .btn:hover {
+      background: #0056b3;
+      transform: translateY(-2px);
+    }
+
+    /* Sections */
+    section {
+      max-width: 1200px;
+      margin: auto;
+      padding: 4rem 1.5rem;
+    }
+
+    section h2 {
+      text-align: center;
+      font-size: 2.4rem;
+      margin-bottom: 1rem;
+    }
+
+    section p.section-subtitle {
+      text-align: center;
+      color: var(--gray);
+      max-width: 700px;
+      margin: auto;
+      margin-bottom: 3rem;
+    }
+
+    /* About */
+    #about p {
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+      font-size: 1.05rem;
+    }
+
+    /* Services */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2rem;
+    }
+
+    .service-card {
+      background: #fff;
+      padding: 2.2rem 1.8rem;
+      border-radius: 14px;
+      text-align: center;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+    }
+
+    .service-card i {
+      font-size: 2.8rem;
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+
+    .service-card h3 {
+      margin-bottom: 0.7rem;
+      font-size: 1.3rem;
+    }
+
+    .service-card p {
+      color: var(--gray);
+      font-size: 0.95rem;
+    }
+
+    /* Portfolio */
+    .portfolio {
+      background: #e9ecef;
+    }
+
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .portfolio-card {
+      background: #fff;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .portfolio-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+    }
+
+    .portfolio-image {
+      position: relative;
+      height: 200px;
+      overflow: hidden;
+    }
+
+    .portfolio-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .portfolio-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 123, 255, 0.85);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity 0.3s;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    .portfolio-card:hover .portfolio-overlay {
+      opacity: 1;
+    }
+
+    .portfolio-overlay h3 {
+      margin: 0;
+      font-size: 1.4rem;
+    }
+
+    .portfolio-overlay p {
+      margin-top: 0.5rem;
+      font-size: 1rem;
+    }
+
+    .portfolio-content {
+      padding: 1.3rem;
+    }
+
+    .portfolio-content h4 {
+      margin-bottom: 0.4rem;
+      font-size: 1.2rem;
+    }
+
+    .portfolio-content p {
+      color: var(--gray);
+      font-size: 0.95rem;
+    }
+
+    /* Testimonials */
+    #testimonials {
+      background: #fff;
+    }
+
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .testimonial-card {
+      background: #f9fafb;
+      padding: 2rem;
+      border-radius: 14px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+      font-size: 0.95rem;
+      color: var(--dark);
+      position: relative;
+    }
+
+    .testimonial-card::before {
+      content: "“";
+      font-size: 3rem;
+      color: var(--primary);
+      position: absolute;
+      top: 10px;
+      left: 16px;
+      opacity: 0.2;
+    }
+
+    .testimonial-card p {
+      margin-bottom: 1rem;
+      font-style: italic;
+    }
+
+    .testimonial-author {
+      font-weight: 600;
+      color: var(--primary);
+    }
+
+    /* Contact */
+    #contact {
+      background: #e9ecef;
+    }
+
+    .contact-wrapper {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      align-items: start;
+    }
+
+    .contact-info {
+      background: #fff;
+      padding: 2.2rem;
+      border-radius: 16px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+    }
+
+    .contact-info p {
+      margin: 0.8rem 0;
+      font-size: 0.95rem;
+      color: var(--gray);
+    }
+
+    .contact-info i {
+      color: var(--primary);
+      margin-right: 0.5rem;
+    }
+
+    .contact-form {
+      background: #fff;
+      padding: 2.2rem;
+      border-radius: 16px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 0.7rem 0.8rem;
+      margin-bottom: 1rem;
+      border-radius: 8px;
+      border: 1px solid #ced4da;
+      font-size: 0.95rem;
+      font-family: inherit;
+    }
+
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 0.15rem rgba(0,123,255,0.25);
+    }
+
+    .map-container {
+      margin-top: 2rem;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+    }
+
+    /* Footer */
+    footer {
+      background: #212529;
+      color: #dee2e6;
+      text-align: center;
+      padding: 1.5rem 1rem;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #adb5bd;
+      margin: 0 0.4rem;
+      transition: color 0.3s;
+    }
+
+    footer a:hover {
+      color: #fff;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      nav ul {
+        display: none;
+        flex-direction: column;
+        background: #fff;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 220px;
+        box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+        border-radius: 0 0 12px 12px;
+        padding: 1rem 0;
+      }
+
+      nav ul.show {
+        display: flex;
+      }
+
+      nav ul li {
+        margin: 0.5rem 0;
+        text-align: center;
+      }
+
+      .hamburger {
+        display: block;
+      }
+
+      .hero h1 {
+        font-size: 2.3rem;
+      }
+
+      section h2 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="logo">Digital Marketing Gojra</div>
+    <ul id="nav-menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
+  </nav>
+</header>
+
+<section id="home" class="hero">
+  <h1>Grow Your Business with Digital Marketing Gojra</h1>
+  <p>Professional SEO, Social Media Marketing, Google Ads, and Website Development tailored for Gojra businesses.</p>
+  <a href="#contact" class="btn">Get a Free Consultation</a>
 </section>
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
-  color: #333;
-}
 
-section {
-  padding: 40px;
-  margin: 20px auto;
-  max-width: 1000px;
-}
+<section id="about">
+  <h2>About Us</h2>
+  <p class="section-subtitle">Your local digital growth partner in Gojra</p>
+  <p>
+    At <strong>Digital Marketing Gojra</strong>, we help local businesses build a strong online presence and achieve sustainable growth. 
+    Our expert team delivers results-driven solutions in SEO, social media marketing, paid advertising, and modern web design.
+  </p>
+</section>
 
-        header { background-color: #fff; box-shadow: 0 2px 4px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 100; }
-      nav { display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; }
-        nav .logo { font-size: 1.5rem; font-weight: bold; color: #007BFF; }
-        nav ul { list-style: none; display: flex; margin: 0; padding: 0; }
-        nav ul li { margin: 0 1rem; }
-        nav ul li a { text-decoration: none; color: #6C757D; font-weight: 500; transition: color 0.3s; }
-        nav ul li a:hover { color: #007BFF; }
-        .hamburger { display: none; font-size: 1.5rem; cursor: pointer; }
-        section { padding: 4rem 2rem; max-width: 1200px; margin: 0 auto; }
-        .hero { background: linear-gradient(to right, #007BFF, #0056b3), url('https://via.placeholder.com/1200x600?text=Digital+Marketing+Gojra'); background-size: cover; color: white; text-align: center; padding: 6rem 2rem; }
-        .hero h1 { font-size: 3rem; margin-bottom: 1rem; }
-        .hero p { font-size: 1.2rem; margin-bottom: 2rem; }
-        .btn { background-color: #007BFF; color: white; padding: 0.75rem 1.5rem; text-decoration: none; border-radius: 5px; font-weight: bold; transition: background 0.3s; }
-        .btn:hover { background-color: #0056b3; }
-        .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; }
-        .service { background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); text-align: center; }
-        .service i { font-size: 3rem; color: #007BFF; margin-bottom: 1rem; }
-        .portfolio { background-color: #e9ecef; }
-    <section id="portfolio" class="portfolio">
+<section id="services">
+  <h2>Our Services</h2>
+  <p class="section-subtitle">Everything you need to succeed online</p>
+
+  <div class="services-grid">
+    <div class="service-card">
+      <i class="fas fa-search"></i>
+      <h3>SEO (Search Engine Optimization)</h3>
+      <p>Rank higher on Google and attract more customers from Gojra with our proven local SEO strategies.</p>
+    </div>
+
+    <div class="service-card">
+      <i class="fab fa-facebook-f"></i>
+      <h3>Social Media Marketing</h3>
+      <p>Build brand awareness and engage your audience on Facebook, Instagram, and more.</p>
+    </div>
+
+    <div class="service-card">
+      <i class="fab fa-google"></i>
+      <h3>Google Ads Management</h3>
+      <p>Get instant traffic and leads with expertly managed Google Ads campaigns for Gojra businesses.</p>
+    </div>
+
+    <div class="service-card">
+      <i class="fas fa-code"></i>
+      <h3>Website Development</h3>
+      <p>Modern, fast, and mobile-friendly websites designed to convert visitors into customers.</p>
+    </div>
+
+    <div class="service-card">
+      <i class="fas fa-palette"></i>
+      <h3>Branding & Design</h3>
+      <p>Create a powerful brand identity with professional logos, visuals, and marketing materials.</p>
+    </div>
+  </div>
+</section>
+
+<section id="portfolio" class="portfolio">
   <h2>Our Work</h2>
-  <p class="portfolio-subtitle">Real results for local businesses in Gojra</p>
+  <p class="section-subtitle">Real results for real businesses in Gojra</p>
 
   <div class="portfolio-grid">
 
     <div class="portfolio-card">
       <div class="portfolio-image">
-        <img src="images/seo-project.jpg" alt="SEO Campaign for Gojra Business">
+        <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=800&q=80" alt="SEO Campaign for Gojra Business">
         <div class="portfolio-overlay">
           <h3>SEO Campaign</h3>
           <p>+150% Organic Traffic</p>
@@ -104,7 +549,7 @@ section {
 
     <div class="portfolio-card">
       <div class="portfolio-image">
-        <img src="images/website-project.jpg" alt="Website Development for Gojra Service">
+        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=800&q=80" alt="Website Development for Gojra Service Provider">
         <div class="portfolio-overlay">
           <h3>Website Development</h3>
           <p>+200% Leads</p>
@@ -118,7 +563,7 @@ section {
 
     <div class="portfolio-card">
       <div class="portfolio-image">
-        <img src="images/ads-project.jpg" alt="Google Ads Campaign for Gojra Business">
+        <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=800&q=80" alt="Google Ads Campaign for Gojra Restaurant">
         <div class="portfolio-overlay">
           <h3>Google Ads</h3>
           <p>+300% Bookings</p>
@@ -129,232 +574,83 @@ section {
         <p>Generated 3x more bookings using localized Google Ads strategy.</p>
       </div>
     </div>
+
   </div>
 </section>
-   .portfolio {
-  background-color: #e9ecef;
-  padding: 4rem 2rem;
-  text-align: center;
-}
 
-.portfolio h2 {
-  font-size: 2.2rem;
-  margin-bottom: 0.5rem;
-}
+<section id="testimonials">
+  <h2>What Our Clients Say</h2>
+  <p class="section-subtitle">Trusted by businesses across Gojra</p>
 
-.portfolio-subtitle {
-  color: #555;
-  margin-bottom: 2.5rem;
-}
+  <div class="testimonials-grid">
+    <div class="testimonial-card">
+      <p>Digital Marketing Gojra transformed our online presence. Their SEO got us top rankings in local searches.</p>
+      <div class="testimonial-author">— Ahmed Khan, Local Shop Owner</div>
+    </div>
 
-.portfolio-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-}
+    <div class="testimonial-card">
+      <p>Excellent Google Ads service. We saw immediate results and more bookings in Gojra.</p>
+      <div class="testimonial-author">— Fatima Ali, Restaurant Owner</div>
+    </div>
 
-.portfolio-card {
-  background: white;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.portfolio-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
-}
-
-.portfolio-image {
-  position: relative;
-  height: 200px;
-  overflow: hidden;
-}
-
-.portfolio-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.portfolio-overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 123, 255, 0.85);
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  text-align: center;
-}
-
-.portfolio-card:hover .portfolio-overlay {
-  opacity: 1;
-}
-
-.portfolio-overlay h3 {
-  margin: 0;
-  font-size: 1.4rem;
-}
-
-.portfolio-overlay p {
-  margin-top: 0.5rem;
-  font-size: 1rem;
-.portfolio-content {
-  padding: 1.2rem;
-.portfolio-content h4 {
-  margin-bottom: 0.4rem;
-  font-size: 1.2rem;
-
-.portfolio-content p {
-  color: #555;
-  font-size: 0.95rem'
-/* Mobile friendly */
-@media (max-width: 600px) {
-  .portfolio h2 {
-    font-size: 1.8rem;
-    </style>
-</head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8LE2KR3BKL"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-8LE2KR3BKL');
-</script>
-    <body>
-    <header>
-        <nav>
-            <div class="logo">Digital Marketing Gojra</div>
-            <ul id="nav-menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="hamburger" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
-        </nav>
-    </header>
-
-    <section id="home" class="hero">
-        <h1>Boost Your Business with Digital Marketing Gojra</h1>
-        <p>Expert SEO, Social Media, Google Ads, and more tailored for Gojra businesses. Grow your online presence today!</p>
-        <a href="#contact" class="btn">Get a Quote</a>
-    </section>
-
-    <section id="about">
-        <h2>About Us</h2>
-        <p>At Digital Marketing Gojra, we specialize in helping local businesses in Gojra thrive online. With years of experience in SEO for Gojra Businesses, we deliver results that drive traffic, leads, and sales. Our client-focused approach ensures your success in the digital world.</p>
-    </section>
-
-    <section id="services">
-        <h2>Our Services</h2>
-        <div class="services">
-            <div class="service">
-                <i class="fas fa-search"></i>
-                <h3>SEO for Gojra Businesses</h3>
-                <p>Optimize your site to rank higher in local searches. Get more customers from Gojra with our proven SEO strategies.</p>
-            </div>
-            <div class="service">
-                <i class="fab fa-facebook-f"></i>
-                <h3>Social Media Marketing</h3>
-                <p>Engage your audience on platforms like Facebook and Instagram. Build a strong brand presence in Gojra.</p>
-            </div>
-            <div class="service">
-                <i class="fab fa-google"></i>
-                <h3>Google Ads</h3>
-                <p>Targeted ads to reach potential customers in Gojra. Maximize ROI with expert Google Ads management.</p>
-            </div>
-            <div class="service">
-                <i class="fas fa-code"></i>
-                <h3>Website Development</h3>
-                <p>Modern, responsive websites designed for Gojra businesses. Fast, secure, and SEO-optimized.</p>
-            </div>
-            <div class="service">
-                <i class="fas fa-palette"></i>
-                <h3>Branding</h3>
-                <p>Create a memorable brand identity that resonates with the Gojra community. From logos to marketing materials.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="portfolio" class="portfolio">
-     <h2>Portfolio</h2>
-        <div class="portfolio-grid">
-            <div class="portfolio-item">
-                 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAA..." alt="SEO Campaign for Local Retailer" style="max-width:100%; height:auto;">
-                <h3>SEO Campaign for Local Retailer</h3>
-                <p>Increased organic traffic by 150% for a Gojra retailer using targeted SEO for Gojra Businesses.</p>
-            </div>
-            <div class="portfolio-item">
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABgAAAAQACAIAAACoEwUVAAFEOWNhQlgAAUQ5anVtYgAAAB5qdW1kYzJwYQARABCAAACqADibcQNjMnBhAAAANvRqdW1i
-             <h3>Website for Gojra Service Provider</h3>
-                <p>Built a mobile-responsive site that boosted leads by 200%.</p>
-            </div>
-            <div class="portfolio-item">
-         <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABgAAAAQACAIAAACoEwUVAAE5rmNhQlgAATmuanVtYgAAAB5qdW1kYzJwYQARABCAAACqADibcQNjMnBhAAAANvRqdW1iAAAAR2p1bWRjMm1hABEAEIAAAKoAOJtxA3VybjpjMnBhOmJmZTY5MmE0LTZkYWQtNGFkNS1iYWMwLTE5ZWZmMDE2ZGVkNQAAAAHBanVtYgAAAClqdW1kYzJhcwARABCAAACqADibcQNjMnBhLmFzc2VydGlvbnMAAAAA5Wp1bWIAAAApanVtZGNib3IAEQAQgAAAqgA4m3EDYzJwYS5hY3Rpb25zLnYyAAAAALRjYm9yoWdhY3Rpb25zgqNmYWN0aW9ubGMycGEuY3JlYXRlZG1zb2Z0d2FyZUFnZW50v2RuYW1lZkdQVC00b/9xZGlnaXRhbFNvdXJjZVR5cGV4Rmh0dHA6Ly9j..." alt="Gojra Restaurant Google Ads" style="max-width:100%; height:auto;">
-             <h3>Google Ads for Gojra Restaurant</h3><img src="data:
-                <p>Drove 300% more bookings with localized ads.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="testimonials">
-        <h2>Testimonials</h2>
-        <div class="testimonial">
-            <p>"Digital Marketing Gojra transformed our online presence. Their SEO for Gojra Businesses got us top rankings!" - Ahmed Khan, Local Shop Owner</p>
-        </div>
-        <div class="testimonial">
-            <p>"Excellent Google Ads service. We saw immediate results in Gojra. Highly recommend!" - Fatima Ali, Restaurant Owner</p>
-        </div>
-        <div class="testimonial">
-            <p>"Their website development team created a stunning site that our customers love." - Usman Butt, Service Provider</p>
-        </div>
-    </section>
-
-    <section id="contact" class="contact">
-        <h2>Contact Us</h2>
-        <p>Ready to grow your business? Contact Digital Marketing Gojra today for a free consultation.</p>
-        <form class="contact-form" action="https://formspree.io/your-email" method="POST">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-            <button type="submit" class="btn">Contact Us</button>
-        </form>
-        <div class="map"
-        </div><section id="location">
-  <h2>Our Location</h2>
-  <iframe 
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3444.987654321!2d72.6754321!3d31.1534567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3915fa1b23456789%3A0xabcdef123456789!2sGulshan%20Mehmood%20Colony%2C%20St%202%2C%20Gojra!5e0!3m2!1sen!2s!4v1706956800000!5m2!1sen!2s" 
-    width="100%" 
-    height="300" 
-    style="border:0;" 
-    allowfullscreen="" 
-    loading="lazy">
-  </iframe>
+    <div class="testimonial-card">
+      <p>Their website development team created a stunning, fast website that our customers love.</p>
+      <div class="testimonial-author">— Usman Butt, Service Provider</div>
+    </div>
+  </div>
 </section>
 
-        <p><i class="fas fa-phone"></i> Phone: +92-3212639092</p>
-        <p><i class="fas fa-envelope"></i> Email: abdullah.gojra1@gmail.com</p>
-        <p>Follow us: <a href="https://facebook.com/digitalmarketinggojra" target="_blank"><i class="fab fa-facebook"></i></a> <a href="https://twitter.com/digitalgojra" target="_blank"><i class="fab fa-twitter"></i></a> <a href="https://linkedin.com/company/digitalmarketinggojra" target="_blank"><i class="fab fa-linkedin"></i></a></p>
-    </section>
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p class="section-subtitle">Let’s grow your business together</p>
 
-    <footer>
-        <p>>&copy; 2026 Digital Marketing Gojra. All rights reserved.
-    </footer>
-    <script>
-        function toggleMenu() {
-            const menu = document.getElementById('nav-menu');
-            menu.classList.toggle('show');
-        }
-    </script>
+  <div class="contact-wrapper">
+
+    <div class="contact-info">
+      <h3>Get in Touch</h3>
+      <p><i class="fas fa-phone"></i> +92 321 2639092</p>
+      <p><i class="fas fa-envelope"></i> abdullah.gojra1@gmail.com</p>
+      <p><i class="fas fa-map-marker-alt"></i> Gulshan Mehmood Colony, Street 2, Gojra, Pakistan</p>
+      <p>
+        Follow us:
+        <a href="https://facebook.com/digitalmarketinggojra" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com/digitalgojra" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://linkedin.com/company/digitalmarketinggojra" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </p>
+    </div>
+
+    <form class="contact-form" action="https://formspree.io/f/xqkrzjze" method="POST">
+      <h3>Send Us a Message</h3>
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Submit</button>
+    </form>
+
+  </div>
+
+  <div class="map-container">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3444.987654321!2d72.6754321!3d31.1534567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3915fa1b23456789%3A0xabcdef123456789!2sGulshan%20Mehmood%20Colony%2C%20St%202%2C%20Gojra!5e0!3m2!1sen!2s!4v1706956800000!5m2!1sen!2s" 
+      width="100%" 
+      height="350" 
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy">
+    </iframe>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2026 Digital Marketing Gojra. All rights reserved.</p>
+</footer>
+
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById('nav-menu');
+    menu.classList.toggle('show');
+  }
+</script>
+
 </body>
 </html>
