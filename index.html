@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Digital Marketing Gojra - Boost Your Business Online</title>
+  <title>Digital Marketing Gojra - Grow Your Business Online</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Expert Digital Marketing Gojra services including SEO, Social Media Marketing, Google Ads, Website Development, and Branding for local businesses. Boost your online presence in Gojra.">
-  <meta name="keywords" content="Digital Marketing Gojra, SEO Gojra, Social Media Marketing Gojra, Google Ads Gojra, Website Development Gojra, Branding Gojra">
+  <meta name="description" content="Digital Marketing Gojra offers SEO, Social Media Marketing, Google Ads, Website Development, and Branding for businesses of all sizes. Grow your online presence today.">
+  <meta name="keywords" content="Digital Marketing Gojra, SEO Gojra, Online Marketing Services, Website Development Gojra, Google Ads Gojra, Branding Gojra">
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -43,6 +43,7 @@
       --dark: #212529;
       --light: #f8f9fa;
       --gray: #6c757d;
+      --soft: #eef3f9;
     }
 
     * {
@@ -133,7 +134,7 @@
 
     .hero p {
       font-size: 1.2rem;
-      max-width: 700px;
+      max-width: 800px;
       margin: auto;
       margin-bottom: 2rem;
     }
@@ -153,6 +154,18 @@
       transform: translateY(-2px);
     }
 
+    .btn-outline {
+      background: transparent;
+      color: #fff;
+      border: 2px solid #fff;
+      margin-left: 0.5rem;
+    }
+
+    .btn-outline:hover {
+      background: #fff;
+      color: var(--primary);
+    }
+
     /* Sections */
     section {
       max-width: 1200px;
@@ -163,23 +176,60 @@
     section h2 {
       text-align: center;
       font-size: 2.4rem;
-      margin-bottom: 1rem;
+      margin-bottom: 0.5rem;
     }
 
     section p.section-subtitle {
       text-align: center;
       color: var(--gray);
-      max-width: 700px;
+      max-width: 800px;
       margin: auto;
       margin-bottom: 3rem;
     }
 
     /* About */
     #about p {
-      max-width: 800px;
+      max-width: 900px;
       margin: auto;
       text-align: center;
       font-size: 1.05rem;
+    }
+
+    /* Who We Serve */
+    .serve-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .serve-card {
+      background: #fff;
+      padding: 1.8rem 1.4rem;
+      border-radius: 14px;
+      text-align: center;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .serve-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+    }
+
+    .serve-card i {
+      font-size: 2.4rem;
+      color: var(--primary);
+      margin-bottom: 0.8rem;
+    }
+
+    .serve-card h4 {
+      margin-bottom: 0.4rem;
+      font-size: 1.1rem;
+    }
+
+    .serve-card p {
+      color: var(--gray);
+      font-size: 0.9rem;
     }
 
     /* Services */
@@ -217,6 +267,122 @@
     .service-card p {
       color: var(--gray);
       font-size: 0.95rem;
+    }
+
+    /* Process */
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 2rem;
+      counter-reset: step;
+    }
+
+    .process-card {
+      background: #fff;
+      padding: 2rem 1.6rem;
+      border-radius: 14px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+      position: relative;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .process-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+    }
+
+    .process-card::before {
+      counter-increment: step;
+      content: counter(step);
+      position: absolute;
+      top: -14px;
+      left: -14px;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: var(--primary);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 1.1rem;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+    }
+
+    .process-card h4 {
+      margin-bottom: 0.6rem;
+      font-size: 1.2rem;
+    }
+
+    .process-card p {
+      color: var(--gray);
+      font-size: 0.95rem;
+    }
+
+    /* Pricing */
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2rem;
+    }
+
+    .pricing-card {
+      background: #fff;
+      padding: 2.4rem 1.8rem;
+      border-radius: 16px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+      text-align: center;
+      position: relative;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .pricing-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 28px rgba(0,0,0,0.15);
+    }
+
+    .pricing-card.popular {
+      border: 2px solid var(--primary);
+      transform: scale(1.03);
+    }
+
+    .pricing-card.popular::before {
+      content: "Most Popular";
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--primary);
+      color: #fff;
+      padding: 0.25rem 0.8rem;
+      border-radius: 50px;
+      font-size: 0.75rem;
+      font-weight: 600;
+    }
+
+    .pricing-card h3 {
+      margin-bottom: 0.4rem;
+      font-size: 1.4rem;
+    }
+
+    .pricing-price {
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin: 1rem 0;
+    }
+
+    .pricing-card ul {
+      list-style: none;
+      padding: 0;
+      margin: 1.2rem 0 1.6rem 0;
+      color: var(--gray);
+      font-size: 0.95rem;
+    }
+
+    .pricing-card ul li {
+      margin-bottom: 0.6rem;
     }
 
     /* Portfolio */
@@ -337,6 +503,27 @@
     .testimonial-author {
       font-weight: 600;
       color: var(--primary);
+    }
+
+    /* CTA Band */
+    .cta-band {
+      background: linear-gradient(135deg, #007BFF, #0056b3);
+      color: #fff;
+      text-align: center;
+      padding: 3.5rem 1.5rem;
+    }
+
+    .cta-band h2 {
+      margin-bottom: 0.8rem;
+      font-size: 2.3rem;
+    }
+
+    .cta-band p {
+      max-width: 800px;
+      margin: auto;
+      margin-bottom: 1.6rem;
+      font-size: 1.1rem;
+      opacity: 0.95;
     }
 
     /* Contact */
@@ -466,7 +653,10 @@
     <ul id="nav-menu">
       <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
+      <li><a href="#serve">Who We Serve</a></li>
       <li><a href="#services">Services</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#pricing">Packages</a></li>
       <li><a href="#portfolio">Portfolio</a></li>
       <li><a href="#testimonials">Testimonials</a></li>
       <li><a href="#contact">Contact</a></li>
@@ -476,60 +666,182 @@
 </header>
 
 <section id="home" class="hero">
-  <h1>Grow Your Business with Digital Marketing Gojra</h1>
-  <p>Professional SEO, Social Media Marketing, Google Ads, and Website Development tailored for Gojra businesses.</p>
-  <a href="#contact" class="btn">Get a Free Consultation</a>
+  <h1>Grow Your Business Online with Confidence</h1>
+  <p>
+    We help startups, small businesses, and growing brands achieve measurable results through 
+    SEO, digital marketing, and modern web solutions.
+  </p>
+  <a href="#contact" class="btn">Get Free Consultation</a>
+  <a href="#services" class="btn btn-outline">Our Services</a>
 </section>
 
 <section id="about">
   <h2>About Us</h2>
-  <p class="section-subtitle">Your local digital growth partner in Gojra</p>
+  <p class="section-subtitle">A results-driven digital marketing agency in Gojra</p>
   <p>
-    At <strong>Digital Marketing Gojra</strong>, we help local businesses build a strong online presence and achieve sustainable growth. 
-    Our expert team delivers results-driven solutions in SEO, social media marketing, paid advertising, and modern web design.
+    <strong>Digital Marketing Gojra</strong> is a full-service digital agency dedicated to helping businesses 
+    build strong online identities and drive sustainable growth. Our team blends creativity, data, 
+    and strategy to deliver marketing solutions that convert traffic into loyal customers.
   </p>
+</section>
+
+<section id="serve">
+  <h2>Who We Serve</h2>
+  <p class="section-subtitle">Flexible solutions for every industry</p>
+
+  <div class="serve-grid">
+    <div class="serve-card">
+      <i class="fas fa-store"></i>
+      <h4>Retail & Shops</h4>
+      <p>Local stores, showrooms, and product sellers.</p>
+    </div>
+    <div class="serve-card">
+      <i class="fas fa-utensils"></i>
+      <h4>Restaurants & Cafes</h4>
+      <p>Food businesses looking for more bookings and orders.</p>
+    </div>
+    <div class="serve-card">
+      <i class="fas fa-briefcase"></i>
+      <h4>Service Providers</h4>
+      <p>Plumbers, electricians, consultants, and freelancers.</p>
+    </div>
+    <div class="serve-card">
+      <i class="fas fa-building"></i>
+      <h4>Real Estate</h4>
+      <p>Property dealers, builders, and real estate agencies.</p>
+    </div>
+    <div class="serve-card">
+      <i class="fas fa-graduation-cap"></i>
+      <h4>Education</h4>
+      <p>Schools, academies, and online learning platforms.</p>
+    </div>
+    <div class="serve-card">
+      <i class="fas fa-heartbeat"></i>
+      <h4>Healthcare</h4>
+      <p>Clinics, doctors, and wellness service providers.</p>
+    </div>
+  </div>
 </section>
 
 <section id="services">
   <h2>Our Services</h2>
-  <p class="section-subtitle">Everything you need to succeed online</p>
+  <p class="section-subtitle">End-to-end digital solutions for your business</p>
 
   <div class="services-grid">
     <div class="service-card">
       <i class="fas fa-search"></i>
       <h3>SEO (Search Engine Optimization)</h3>
-      <p>Rank higher on Google and attract more customers from Gojra with our proven local SEO strategies.</p>
+      <p>Rank higher on Google and attract qualified traffic from your target audience.</p>
     </div>
 
     <div class="service-card">
       <i class="fab fa-facebook-f"></i>
       <h3>Social Media Marketing</h3>
-      <p>Build brand awareness and engage your audience on Facebook, Instagram, and more.</p>
+      <p>Build brand awareness, engagement, and sales across social platforms.</p>
     </div>
 
     <div class="service-card">
       <i class="fab fa-google"></i>
-      <h3>Google Ads Management</h3>
-      <p>Get instant traffic and leads with expertly managed Google Ads campaigns for Gojra businesses.</p>
+      <h3>Google Ads & PPC</h3>
+      <p>Get instant visibility and leads with high-converting paid advertising campaigns.</p>
     </div>
 
     <div class="service-card">
       <i class="fas fa-code"></i>
       <h3>Website Development</h3>
-      <p>Modern, fast, and mobile-friendly websites designed to convert visitors into customers.</p>
+      <p>Fast, secure, and conversion-focused websites built for modern businesses.</p>
     </div>
 
     <div class="service-card">
       <i class="fas fa-palette"></i>
       <h3>Branding & Design</h3>
-      <p>Create a powerful brand identity with professional logos, visuals, and marketing materials.</p>
+      <p>Create a professional brand identity that builds trust and recognition.</p>
+    </div>
+
+    <div class="service-card">
+      <i class="fas fa-chart-line"></i>
+      <h3>Analytics & Reporting</h3>
+      <p>Track performance with transparent reports and data-driven insights.</p>
+    </div>
+  </div>
+</section>
+
+<section id="process">
+  <h2>Our Process</h2>
+  <p class="section-subtitle">A simple, proven workflow for consistent results</p>
+
+  <div class="process-grid">
+    <div class="process-card">
+      <h4>Discovery</h4>
+      <p>We understand your business goals, audience, and challenges.</p>
+    </div>
+    <div class="process-card">
+      <h4>Strategy</h4>
+      <p>We build a customized digital strategy tailored to your objectives.</p>
+    </div>
+    <div class="process-card">
+      <h4>Execution</h4>
+      <p>Our team implements campaigns, content, and technology solutions.</p>
+    </div>
+    <div class="process-card">
+      <h4>Optimization</h4>
+      <p>We continuously improve performance using data and analytics.</p>
+    </div>
+    <div class="process-card">
+      <h4>Reporting</h4>
+      <p>You receive clear, transparent reports on results and ROI.</p>
+    </div>
+  </div>
+</section>
+
+<section id="pricing">
+  <h2>Packages</h2>
+  <p class="section-subtitle">Flexible plans designed to grow with your business</p>
+
+  <div class="pricing-grid">
+    <div class="pricing-card">
+      <h3>Starter</h3>
+      <div class="pricing-price">PKR 15,000 / mo</div>
+      <ul>
+        <li>Basic SEO Optimization</li>
+        <li>Social Media Setup</li>
+        <li>Monthly Performance Report</li>
+        <li>Email Support</li>
+      </ul>
+      <a href="#contact" class="btn">Get Started</a>
+    </div>
+
+    <div class="pricing-card popular">
+      <h3>Growth</h3>
+      <div class="pricing-price">PKR 30,000 / mo</div>
+      <ul>
+        <li>Advanced SEO Strategy</li>
+        <li>Social Media Marketing</li>
+        <li>Google Ads Management</li>
+        <li>Bi-weekly Reports</li>
+        <li>Priority Support</li>
+      </ul>
+      <a href="#contact" class="btn">Most Popular</a>
+    </div>
+
+    <div class="pricing-card">
+      <h3>Enterprise</h3>
+      <div class="pricing-price">Custom Pricing</div>
+      <ul>
+        <li>Full Digital Marketing Suite</li>
+        <li>Custom Website & Funnel</li>
+        <li>Dedicated Account Manager</li>
+        <li>Weekly Strategy Calls</li>
+        <li>24/7 Priority Support</li>
+      </ul>
+      <a href="#contact" class="btn">Contact Us</a>
     </div>
   </div>
 </section>
 
 <section id="portfolio" class="portfolio">
   <h2>Our Work</h2>
-  <p class="section-subtitle">Real results for real businesses in Gojra</p>
+  <p class="section-subtitle">Results that speak for themselves</p>
 
   <div class="portfolio-grid">
 
@@ -600,9 +912,18 @@
   </div>
 </section>
 
+<div class="cta-band">
+  <h2>Ready to Grow Your Business?</h2>
+  <p>
+    Whether you're a startup or an established business, we have the tools, expertise, 
+    and strategy to take your brand to the next level.
+  </p>
+  <a href="#contact" class="btn">Get Free Consultation</a>
+</div>
+
 <section id="contact">
   <h2>Contact Us</h2>
-  <p class="section-subtitle">Let’s grow your business together</p>
+  <p class="section-subtitle">Let’s build something great together</p>
 
   <div class="contact-wrapper">
 
