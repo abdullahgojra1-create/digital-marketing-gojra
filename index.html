@@ -7,6 +7,13 @@
   <meta name="description" content="Digital Marketing Gojra offers SEO, Social Media Marketing, Google Ads, Website Development, and Branding for businesses of all sizes. Grow your online presence today.">
   <meta name="keywords" content="Digital Marketing Gojra, SEO Gojra, Online Marketing Services, Website Development Gojra, Google Ads Gojra, Branding Gojra">
 
+  <!-- Open Graph for social sharing -->
+  <meta property="og:title" content="Digital Marketing Gojra">
+  <meta property="og:description" content="Grow your business online with our SEO, Digital Marketing, and Web Solutions.">
+  <meta property="og:image" content="https://abdullahgojra1-create.github.io/digital-marketing-gojra/logo.png">
+  <meta property="og:url" content="https://abdullahgojra1-create.github.io/digital-marketing-gojra/">
+  <meta property="og:type" content="website">
+
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
@@ -24,7 +31,12 @@
       "addressLocality": "Gojra",
       "addressCountry": "PK"
     },
-    "telephone": "+92 321 2639092"
+    "telephone": "+92 321 2639092",
+    "sameAs": [
+      "https://facebook.com/digitalmarketinggojra",
+      "https://twitter.com/digitalgojra",
+      "https://linkedin.com/company/digitalmarketinggojra"
+    ]
   }
   </script>
 
@@ -46,9 +58,7 @@
       --soft: #eef3f9;
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     body {
       margin: 0;
@@ -58,17 +68,9 @@
       line-height: 1.6;
     }
 
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
+    a { text-decoration: none; color: inherit; }
+    img { max-width: 100%; height: auto; }
 
-    img {
-      max-width: 100%;
-      height: auto;
-    }
-
-    /* Header */
     header {
       background: #fff;
       box-shadow: 0 2px 10px rgba(0,0,0,0.08);
@@ -86,11 +88,7 @@
       align-items: center;
     }
 
-    .logo {
-      font-size: 1.6rem;
-      font-weight: 700;
-      color: var(--primary);
-    }
+    .logo { font-size: 1.6rem; font-weight: 700; color: var(--primary); }
 
     nav ul {
       list-style: none;
@@ -106,9 +104,7 @@
       transition: color 0.3s;
     }
 
-    nav ul li a:hover {
-      color: var(--primary);
-    }
+    nav ul li a:hover { color: var(--primary); }
 
     .hamburger {
       display: none;
@@ -127,17 +123,8 @@
       padding: 7rem 1.5rem;
     }
 
-    .hero h1 {
-      font-size: 3rem;
-      margin-bottom: 1rem;
-    }
-
-    .hero p {
-      font-size: 1.2rem;
-      max-width: 800px;
-      margin: auto;
-      margin-bottom: 2rem;
-    }
+    .hero h1 { font-size: 3rem; margin-bottom: 1rem; }
+    .hero p { font-size: 1.2rem; max-width: 800px; margin: auto; margin-bottom: 2rem; }
 
     .btn {
       display: inline-block;
@@ -149,11 +136,7 @@
       transition: background 0.3s, transform 0.2s;
     }
 
-    .btn:hover {
-      background: #0056b3;
-      transform: translateY(-2px);
-    }
-
+    .btn:hover { background: #0056b3; transform: translateY(-2px); }
     .btn-outline {
       background: transparent;
       color: #fff;
@@ -161,10 +144,7 @@
       margin-left: 0.5rem;
     }
 
-    .btn-outline:hover {
-      background: #fff;
-      color: var(--primary);
-    }
+    .btn-outline:hover { background: #fff; color: var(--primary); }
 
     /* Sections */
     section {
@@ -188,20 +168,10 @@
     }
 
     /* About */
-    #about p {
-      max-width: 900px;
-      margin: auto;
-      text-align: center;
-      font-size: 1.05rem;
-    }
+    #about p { max-width: 900px; margin: auto; text-align: center; font-size: 1.05rem; }
 
-    /* Who We Serve */
-    .serve-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 1.5rem;
-    }
-
+    /* Serve Grid */
+    .serve-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; }
     .serve-card {
       background: #fff;
       padding: 1.8rem 1.4rem;
@@ -210,35 +180,13 @@
       box-shadow: 0 6px 16px rgba(0,0,0,0.08);
       transition: transform 0.3s, box-shadow 0.3s;
     }
-
-    .serve-card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 12px 24px rgba(0,0,0,0.12);
-    }
-
-    .serve-card i {
-      font-size: 2.4rem;
-      color: var(--primary);
-      margin-bottom: 0.8rem;
-    }
-
-    .serve-card h4 {
-      margin-bottom: 0.4rem;
-      font-size: 1.1rem;
-    }
-
-    .serve-card p {
-      color: var(--gray);
-      font-size: 0.9rem;
-    }
+    .serve-card:hover { transform: translateY(-6px); box-shadow: 0 12px 24px rgba(0,0,0,0.12); }
+    .serve-card i { font-size: 2.4rem; color: var(--primary); margin-bottom: 0.8rem; }
+    .serve-card h4 { margin-bottom: 0.4rem; font-size: 1.1rem; }
+    .serve-card p { color: var(--gray); font-size: 0.9rem; }
 
     /* Services */
-    .services-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 2rem;
-    }
-
+    .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 2rem; }
     .service-card {
       background: #fff;
       padding: 2.2rem 1.8rem;
@@ -247,36 +195,13 @@
       box-shadow: 0 6px 16px rgba(0,0,0,0.08);
       transition: transform 0.3s, box-shadow 0.3s;
     }
-
-    .service-card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 12px 24px rgba(0,0,0,0.12);
-    }
-
-    .service-card i {
-      font-size: 2.8rem;
-      color: var(--primary);
-      margin-bottom: 1rem;
-    }
-
-    .service-card h3 {
-      margin-bottom: 0.7rem;
-      font-size: 1.3rem;
-    }
-
-    .service-card p {
-      color: var(--gray);
-      font-size: 0.95rem;
-    }
+    .service-card:hover { transform: translateY(-6px); box-shadow: 0 12px 24px rgba(0,0,0,0.12); }
+    .service-card i { font-size: 2.8rem; color: var(--primary); margin-bottom: 1rem; }
+    .service-card h3 { margin-bottom: 0.7rem; font-size: 1.3rem; }
+    .service-card p { color: var(--gray); font-size: 0.95rem; }
 
     /* Process */
-    .process-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 2rem;
-      counter-reset: step;
-    }
-
+    .process-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 2rem; counter-reset: step; }
     .process-card {
       background: #fff;
       padding: 2rem 1.6rem;
@@ -285,12 +210,7 @@
       position: relative;
       transition: transform 0.3s, box-shadow 0.3s;
     }
-
-    .process-card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 12px 24px rgba(0,0,0,0.12);
-    }
-
+    .process-card:hover { transform: translateY(-6px); box-shadow: 0 12px 24px rgba(0,0,0,0.12); }
     .process-card::before {
       counter-increment: step;
       content: counter(step);
@@ -309,24 +229,11 @@
       font-size: 1.1rem;
       box-shadow: 0 6px 16px rgba(0,0,0,0.15);
     }
-
-    .process-card h4 {
-      margin-bottom: 0.6rem;
-      font-size: 1.2rem;
-    }
-
-    .process-card p {
-      color: var(--gray);
-      font-size: 0.95rem;
-    }
+    .process-card h4 { margin-bottom: 0.6rem; font-size: 1.2rem; }
+    .process-card p { color: var(--gray); font-size: 0.95rem; }
 
     /* Pricing */
-    .pricing-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 2rem;
-    }
-
+    .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 2rem; }
     .pricing-card {
       background: #fff;
       padding: 2.4rem 1.8rem;
@@ -336,17 +243,8 @@
       position: relative;
       transition: transform 0.3s, box-shadow 0.3s;
     }
-
-    .pricing-card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 12px 28px rgba(0,0,0,0.15);
-    }
-
-    .pricing-card.popular {
-      border: 2px solid var(--primary);
-      transform: scale(1.03);
-    }
-
+    .pricing-card:hover { transform: translateY(-6px); box-shadow: 0 12px 28px rgba(0,0,0,0.15); }
+    .pricing-card.popular { border: 2px solid var(--primary); transform: scale(1.03); }
     .pricing-card.popular::before {
       content: "Most Popular";
       position: absolute;
@@ -360,67 +258,18 @@
       font-size: 0.75rem;
       font-weight: 600;
     }
-
-    .pricing-card h3 {
-      margin-bottom: 0.4rem;
-      font-size: 1.4rem;
-    }
-
-    .pricing-price {
-      font-size: 2.2rem;
-      font-weight: 700;
-      color: var(--primary);
-      margin: 1rem 0;
-    }
-
-    .pricing-card ul {
-      list-style: none;
-      padding: 0;
-      margin: 1.2rem 0 1.6rem 0;
-      color: var(--gray);
-      font-size: 0.95rem;
-    }
-
-    .pricing-card ul li {
-      margin-bottom: 0.6rem;
-    }
+    .pricing-card h3 { margin-bottom: 0.4rem; font-size: 1.4rem; }
+    .pricing-price { font-size: 2.2rem; font-weight: 700; color: var(--primary); margin: 1rem 0; }
+    .pricing-card ul { list-style: none; padding: 0; margin: 1.2rem 0 1.6rem 0; color: var(--gray); font-size: 0.95rem; }
+    .pricing-card ul li { margin-bottom: 0.6rem; }
 
     /* Portfolio */
-    .portfolio {
-      background: #e9ecef;
-    }
-
-    .portfolio-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 2rem;
-    }
-
-    .portfolio-card {
-      background: #fff;
-      border-radius: 16px;
-      overflow: hidden;
-      box-shadow: 0 6px 16px rgba(0,0,0,0.1);
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
-
-    .portfolio-card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 12px 24px rgba(0,0,0,0.15);
-    }
-
-    .portfolio-image {
-      position: relative;
-      height: 200px;
-      overflow: hidden;
-    }
-
-    .portfolio-image img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
+    .portfolio { background: #e9ecef; }
+    .portfolio-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
+    .portfolio-card { background: #fff; border-radius: 16px; overflow: hidden; box-shadow: 0 6px 16px rgba(0,0,0,0.1); transition: transform 0.3s, box-shadow 0.3s; }
+    .portfolio-card:hover { transform: translateY(-6px); box-shadow: 0 12px 24px rgba(0,0,0,0.15); }
+    .portfolio-image { position: relative; height: 200px; overflow: hidden; }
+    .portfolio-image img { width: 100%; height: 100%; object-fit: cover; }
     .portfolio-overlay {
       position: absolute;
       inset: 0;
@@ -435,533 +284,237 @@
       text-align: center;
       padding: 1rem;
     }
-
-    .portfolio-card:hover .portfolio-overlay {
-      opacity: 1;
-    }
-
-    .portfolio-overlay h3 {
-      margin: 0;
-      font-size: 1.4rem;
-    }
-
-    .portfolio-overlay p {
-      margin-top: 0.5rem;
-      font-size: 1rem;
-    }
-
-    .portfolio-content {
-      padding: 1.3rem;
-    }
-
-    .portfolio-content h4 {
-      margin-bottom: 0.4rem;
-      font-size: 1.2rem;
-    }
-
-    .portfolio-content p {
-      color: var(--gray);
-      font-size: 0.95rem;
-    }
+    .portfolio-card:hover .portfolio-overlay { opacity: 1; }
+    .portfolio-overlay h3 { margin: 0; font-size: 1.4rem; }
+    .portfolio-overlay p { margin-top: 0.5rem; font-size: 1rem; }
+    .portfolio-content { padding: 1.3rem; }
+    .portfolio-content h4 { margin-bottom: 0.4rem; font-size: 1.2rem; }
+    .portfolio-content p { color: var(--gray); font-size: 0.95rem; }
 
     /* Testimonials */
-    #testimonials {
-      background: #fff;
-    }
+    #testimonials { background: #fff; }
+    .testimonials-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
+    .testimonial-card { background: #f9fafb; padding: 2rem; border-radius: 14px; box-shadow: 0 6px 16px rgba(0,0,0,0.08); font-size: 0.95rem; color: var(--dark); position: relative; }
+    .testimonial-card::before { content: "“"; font-size: 3rem; color: var(--primary); position: absolute; top: 10px; left: 16px; opacity: 0.2; }
+    .testimonial-card p { margin-bottom: 1rem; font-style: italic; }
+    .testimonial-author { font-weight: 600; color: var(--primary); }
 
-    .testimonials-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 2rem;
-    }
-
-    .testimonial-card {
-      background: #f9fafb;
-      padding: 2rem;
-      border-radius: 14px;
-      box-shadow: 0 6px 16px rgba(0,0,0,0.08);
-      font-size: 0.95rem;
-      color: var(--dark);
-      position: relative;
-    }
-
-    .testimonial-card::before {
-      content: "“";
-      font-size: 3rem;
-      color: var(--primary);
-      position: absolute;
-      top: 10px;
-      left: 16px;
-      opacity: 0.2;
-    }
-
-    .testimonial-card p {
-      margin-bottom: 1rem;
-      font-style: italic;
-    }
-
-    .testimonial-author {
-      font-weight: 600;
-      color: var(--primary);
-    }
-
-    /* CTA Band */
+    /* CTA + Contact */
     .cta-band {
       background: linear-gradient(135deg, #007BFF, #0056b3);
       color: #fff;
       text-align: center;
       padding: 3.5rem 1.5rem;
     }
+    .cta-band h2 { margin-bottom: 0.8rem; font-size: 2.3rem; }
+    .cta-band p { max-width: 800px; margin: auto; margin-bottom: 1.6rem; font-size: 1.1rem; opacity: 0.95; }
 
-    .cta-band h2 {
-      margin-bottom: 0.8rem;
-      font-size: 2.3rem;
-    }
+    .contact-wrapper { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; align-items: start; margin-top: 2rem; }
+    .contact-info, .contact-form { background: #fff; padding: 2.2rem; border-radius: 16px; box-shadow: 0 6px 16px rgba(0,0,0,0.08); color: var(--dark); }
+    .contact-info p { margin: 0.8rem 0; font-size: 0.95rem; color: var(--gray); }
+    .contact-info i { color: var(--primary); margin-right: 0.5rem; }
+    .contact-form input, .contact-form textarea { width: 100%; padding: 0.7rem 0.8rem; margin-bottom: 1rem; border-radius: 8px; border: 1px solid #ced4da; font-size: 0.95rem; font-family: inherit; }
+    .contact-form input:focus, .contact-form textarea:focus { outline: none; border-color: var(--primary); box-shadow: 0 0 0 0.15rem rgba(0,123,255,0.25); }
 
-    .cta-band p {
-      max-width: 800px;
-      margin: auto;
-      margin-bottom: 1.6rem;
-      font-size: 1.1rem;
-      opacity: 0.95;
-    }
-
-    /* Contact */
-    #contact {
-      background: #e9ecef;
-    }
-
-    .contact-wrapper {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 2rem;
-      align-items: start;
-    }
-
-    .contact-info {
-      background: #fff;
-      padding: 2.2rem;
-      border-radius: 16px;
-      box-shadow: 0 6px 16px rgba(0,0,0,0.08);
-    }
-
-    .contact-info p {
-      margin: 0.8rem 0;
-      font-size: 0.95rem;
-      color: var(--gray);
-    }
-
-    .contact-info i {
-      color: var(--primary);
-      margin-right: 0.5rem;
-    }
-
-    .contact-form {
-      background: #fff;
-      padding: 2.2rem;
-      border-radius: 16px;
-      box-shadow: 0 6px 16px rgba(0,0,0,0.08);
-    }
-
-    .contact-form input,
-    .contact-form textarea {
-      width: 100%;
-      padding: 0.7rem 0.8rem;
-      margin-bottom: 1rem;
-      border-radius: 8px;
-      border: 1px solid #ced4da;
-      font-size: 0.95rem;
-      font-family: inherit;
-    }
-
-    .contact-form input:focus,
-    .contact-form textarea:focus {
-      outline: none;
-      border-color: var(--primary);
-      box-shadow: 0 0 0 0.15rem rgba(0,123,255,0.25);
-    }
-
-    .map-container {
-      margin-top: 2rem;
-      border-radius: 16px;
-      overflow: hidden;
-      box-shadow: 0 6px 16px rgba(0,0,0,0.1);
-    }
+    .map-container { margin-top: 2rem; border-radius: 16px; overflow: hidden; box-shadow: 0 6px 16px rgba(0,0,0,0.1); }
 
     /* Footer */
-    footer {
-      background: #212529;
-      color: #dee2e6;
-      text-align: center;
-      padding: 1.5rem 1rem;
-      font-size: 0.9rem;
-    }
-
-    footer a {
-      color: #adb5bd;
-      margin: 0 0.4rem;
-      transition: color 0.3s;
-    }
-
-    footer a:hover {
-      color: #fff;
-    }
+    footer { background: #212529; color: #dee2e6; text-align: center; padding: 1.5rem 1rem; font-size: 0.9rem; }
+    footer a { color: #adb5bd; margin: 0 0.4rem; transition: color 0.3s; }
+    footer a:hover { color: #fff; }
 
     /* Responsive */
     @media (max-width: 768px) {
-      nav ul {
-        display: none;
-        flex-direction: column;
-        background: #fff;
-        position: absolute;
-        top: 100%;
-        right: 0;
-        width: 220px;
-        box-shadow: 0 6px 16px rgba(0,0,0,0.15);
-        border-radius: 0 0 12px 12px;
-        padding: 1rem 0;
-      }
-
-      nav ul.show {
-        display: flex;
-      }
-
-      nav ul li {
-        margin: 0.5rem 0;
-        text-align: center;
-      }
-
-      .hamburger {
-        display: block;
-      }
-
-      .hero h1 {
-        font-size: 2.3rem;
-      }
-
-      section h2 {
-        font-size: 2rem;
-      }
+      nav ul { display: none; flex-direction: column; background: #fff; position: absolute; top: 100%; right: 0; width: 220px; box-shadow: 0 6px 16px rgba(0,0,0,0.15); border-radius: 0 0 12px 12px; padding: 1rem 0; }
+      nav ul.show { display: flex; }
+      nav ul li { margin: 0.5rem 0; text-align: center; }
+      .hamburger { display: block; }
+      .hero h1 { font-size: 2.3rem; }
+      section h2 { font-size: 2rem; }
     }
   </style>
 </head>
 <body>
 
-<header>
-  <nav>
-    <div class="logo">Digital Marketing Gojra</div>
-    <ul id="nav-menu">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#serve">Who We Serve</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#process">Process</a></li>
-      <li><a href="#pricing">Packages</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#testimonials">Testimonials</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <div class="hamburger" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
-  </nav>
-</header>
-
-<section id="home" class="hero">
-  <h1>Grow Your Business Online with Confidence</h1>
-  <p>
-    We help startups, small businesses, and growing brands achieve measurable results through 
-    SEO, digital marketing, and modern web solutions.
-  </p>
-  <a href="#contact" class="btn">Get Free Consultation</a>
-  <a href="#services" class="btn btn-outline">Our Services</a>
-</section>
-
-<section id="about">
-  <h2>About Us</h2>
-  <p class="section-subtitle">A results-driven digital marketing agency in Gojra</p>
-  <p>
-    <strong>Digital Marketing Gojra</strong> is a full-service digital agency dedicated to helping businesses 
-    build strong online identities and drive sustainable growth. Our team blends creativity, data, 
-    and strategy to deliver marketing solutions that convert traffic into loyal customers.
-  </p>
-</section>
-
-<section id="serve">
-  <h2>Who We Serve</h2>
-  <p class="section-subtitle">Flexible solutions for every industry</p>
-
-  <div class="serve-grid">
-    <div class="serve-card">
-      <i class="fas fa-store"></i>
-      <h4>Retail & Shops</h4>
-      <p>Local stores, showrooms, and product sellers.</p>
-    </div>
-    <div class="serve-card">
-      <i class="fas fa-utensils"></i>
-      <h4>Restaurants & Cafes</h4>
-      <p>Food businesses looking for more bookings and orders.</p>
-    </div>
-    <div class="serve-card">
-      <i class="fas fa-briefcase"></i>
-      <h4>Service Providers</h4>
-      <p>Plumbers, electricians, consultants, and freelancers.</p>
-    </div>
-    <div class="serve-card">
-      <i class="fas fa-building"></i>
-      <h4>Real Estate</h4>
-      <p>Property dealers, builders, and real estate agencies.</p>
-    </div>
-    <div class="serve-card">
-      <i class="fas fa-graduation-cap"></i>
-      <h4>Education</h4>
-      <p>Schools, academies, and online learning platforms.</p>
-    </div>
-    <div class="serve-card">
-      <i class="fas fa-heartbeat"></i>
-      <h4>Healthcare</h4>
-      <p>Clinics, doctors, and wellness service providers.</p>
-    </div>
-  </div>
-</section>
-
-<section id="services">
-  <h2>Our Services</h2>
-  <p class="section-subtitle">End-to-end digital solutions for your business</p>
-
-  <div class="services-grid">
-    <div class="service-card">
-      <i class="fas fa-search"></i>
-      <h3>SEO (Search Engine Optimization)</h3>
-      <p>Rank higher on Google and attract qualified traffic from your target audience.</p>
-    </div>
-
-    <div class="service-card">
-      <i class="fab fa-facebook-f"></i>
-      <h3>Social Media Marketing</h3>
-      <p>Build brand awareness, engagement, and sales across social platforms.</p>
-    </div>
-
-    <div class="service-card">
-      <i class="fab fa-google"></i>
-      <h3>Google Ads & PPC</h3>
-      <p>Get instant visibility and leads with high-converting paid advertising campaigns.</p>
-    </div>
-
-    <div class="service-card">
-      <i class="fas fa-code"></i>
-      <h3>Website Development</h3>
-      <p>Fast, secure, and conversion-focused websites built for modern businesses.</p>
-    </div>
-
-    <div class="service-card">
-      <i class="fas fa-palette"></i>
-      <h3>Branding & Design</h3>
-      <p>Create a professional brand identity that builds trust and recognition.</p>
-    </div>
-
-    <div class="service-card">
-      <i class="fas fa-chart-line"></i>
-      <h3>Analytics & Reporting</h3>
-      <p>Track performance with transparent reports and data-driven insights.</p>
-    </div>
-  </div>
-</section>
-
-<section id="process">
-  <h2>Our Process</h2>
-  <p class="section-subtitle">A simple, proven workflow for consistent results</p>
-
-  <div class="process-grid">
-    <div class="process-card">
-      <h4>Discovery</h4>
-      <p>We understand your business goals, audience, and challenges.</p>
-    </div>
-    <div class="process-card">
-      <h4>Strategy</h4>
-      <p>We build a customized digital strategy tailored to your objectives.</p>
-    </div>
-    <div class="process-card">
-      <h4>Execution</h4>
-      <p>Our team implements campaigns, content, and technology solutions.</p>
-    </div>
-    <div class="process-card">
-      <h4>Optimization</h4>
-      <p>We continuously improve performance using data and analytics.</p>
-    </div>
-    <div class="process-card">
-      <h4>Reporting</h4>
-      <p>You receive clear, transparent reports on results and ROI.</p>
-    </div>
-  </div>
-</section>
-
-<section id="pricing">
-  <h2>Packages</h2>
-  <p class="section-subtitle">Flexible plans designed to grow with your business</p>
-
-  <div class="pricing-grid">
-    <div class="pricing-card">
-      <h3>Starter</h3>
-      <div class="pricing-price">PKR 15,000 / mo</div>
-      <ul>
-        <li>Basic SEO Optimization</li>
-        <li>Social Media Setup</li>
-        <li>Monthly Performance Report</li>
-        <li>Email Support</li>
+  <!-- Header -->
+  <header>
+    <nav>
+      <div class="logo">Digital Marketing Gojra</div>
+      <ul id="nav-menu">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
-      <a href="#contact" class="btn">Get Started</a>
-    </div>
+      <div class="hamburger" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
+    </nav>
+  </header>
 
-    <div class="pricing-card popular">
-      <h3>Growth</h3>
-      <div class="pricing-price">PKR 30,000 / mo</div>
-      <ul>
-        <li>Advanced SEO Strategy</li>
-        <li>Social Media Marketing</li>
-        <li>Google Ads Management</li>
-        <li>Bi-weekly Reports</li>
-        <li>Priority Support</li>
-      </ul>
-      <a href="#contact" class="btn">Most Popular</a>
-    </div>
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <h1>Grow Your Business Online</h1>
+    <p>We provide professional SEO, Digital Marketing, Google Ads, and Web Development services to take your business to the next level.</p>
+    <a href="#contact" class="btn">Get Started</a>
+    <a href="#services" class="btn btn-outline">Our Services</a>
+  </section>
 
-    <div class="pricing-card">
-      <h3>Enterprise</h3>
-      <div class="pricing-price">Custom Pricing</div>
-      <ul>
-        <li>Full Digital Marketing Suite</li>
-        <li>Custom Website & Funnel</li>
-        <li>Dedicated Account Manager</li>
-        <li>Weekly Strategy Calls</li>
-        <li>24/7 Priority Support</li>
-      </ul>
-      <a href="#contact" class="btn">Contact Us</a>
-    </div>
-  </div>
-</section>
+  <main>
+    <!-- About -->
+    <section id="about">
+      <h2>About Us</h2>
+      <p class="section-subtitle">Digital Marketing Gojra is a team of experienced professionals dedicated to helping businesses grow online. We combine strategy, creativity, and technology to deliver results-driven marketing solutions.</p>
+    </section>
 
-<section id="portfolio" class="portfolio">
-  <h2>Our Work</h2>
-  <p class="section-subtitle">Results that speak for themselves</p>
-
-  <div class="portfolio-grid">
-
-    <div class="portfolio-card">
-      <div class="portfolio-image">
-        <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=800&q=80" alt="SEO Campaign for Gojra Business">
-        <div class="portfolio-overlay">
-          <h3>SEO Campaign</h3>
-          <p>+150% Organic Traffic</p>
+    <!-- Services -->
+    <section id="services">
+      <h2>Our Services</h2>
+      <p class="section-subtitle">We provide a wide range of digital marketing services tailored to your business needs.</p>
+      <div class="services-grid">
+        <div class="service-card">
+          <i class="fas fa-search"></i>
+          <h3>SEO Optimization</h3>
+          <p>Boost your website ranking on search engines and drive organic traffic.</p>
         </div>
-      </div>
-      <div class="portfolio-content">
-        <h4>Local Retail SEO</h4>
-        <p>Ranked a Gojra retailer on Google and increased organic traffic by 150%.</p>
-      </div>
-    </div>
-
-    <div class="portfolio-card">
-      <div class="portfolio-image">
-        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=800&q=80" alt="Website Development for Gojra Service Provider">
-        <div class="portfolio-overlay">
-          <h3>Website Development</h3>
-          <p>+200% Leads</p>
+        <div class="service-card">
+          <i class="fas fa-bullhorn"></i>
+          <h3>Social Media Marketing</h3>
+          <p>Promote your brand on Facebook, Instagram, and other platforms effectively.</p>
         </div>
-      </div>
-      <div class="portfolio-content">
-        <h4>Service Provider Website</h4>
-        <p>Built a mobile-first website that doubled leads for a local service business.</p>
-      </div>
-    </div>
-
-    <div class="portfolio-card">
-      <div class="portfolio-image">
-        <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=800&q=80" alt="Google Ads Campaign for Gojra Restaurant">
-        <div class="portfolio-overlay">
+        <div class="service-card">
+          <i class="fas fa-chart-line"></i>
           <h3>Google Ads</h3>
-          <p>+300% Bookings</p>
+          <p>Targeted Google Ads campaigns to reach the right audience and generate leads.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-globe"></i>
+          <h3>Website Development</h3>
+          <p>Custom, responsive, and SEO-friendly websites that represent your brand.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-paint-brush"></i>
+          <h3>Branding</h3>
+          <p>Create a strong brand identity that resonates with your target audience.</p>
         </div>
       </div>
-      <div class="portfolio-content">
-        <h4>Restaurant Ads Campaign</h4>
-        <p>Generated 3x more bookings using localized Google Ads strategy.</p>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="portfolio">
+      <h2>Our Portfolio</h2>
+      <p class="section-subtitle">Some of the projects we have completed for our clients.</p>
+      <div class="portfolio-grid">
+        <div class="portfolio-card">
+          <div class="portfolio-image">
+            <img src="https://images.unsplash.com/photo-1581093588401-69bc17f813e1?auto=format&fit=crop&w=700&q=80" alt="Project 1" loading="lazy">
+            <div class="portfolio-overlay">
+              <h3>Project One</h3>
+              <p>SEO & Digital Marketing</p>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-card">
+          <div class="portfolio-image">
+            <img src="https://images.unsplash.com/photo-1581091215368-71d4c75ff0d0?auto=format&fit=crop&w=700&q=80" alt="Project 2" loading="lazy">
+            <div class="portfolio-overlay">
+              <h3>Project Two</h3>
+              <p>Website Development</p>
+            </div>
+          </div>
+        </div>
       </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials">
+      <h2>Testimonials</h2>
+      <p class="section-subtitle">What our clients say about us.</p>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <p>Digital Marketing Gojra helped us increase our website traffic by 150% in just 3 months. Highly recommended!</p>
+          <div class="testimonial-author">Ali Khan</div>
+        </div>
+        <div class="testimonial-card">
+          <p>Professional team with excellent knowledge in SEO and online marketing. Our sales have doubled!</p>
+          <div class="testimonial-author">Sara Malik</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA + Contact -->
+    <section id="contact" class="cta-band">
+      <h2>Ready to Grow Your Business?</h2>
+      <p>Whether you're a startup or an established business, we have the tools, expertise, and strategy to take your brand to the next level.</p>
+
+      <div class="contact-wrapper">
+        <!-- Contact Form -->
+        <form id="contactForm" class="contact-form" action="https://formspree.io/f/xqkrzjze" method="POST">
+          <h3>Send Us a Message</h3>
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+
+          <button type="submit" class="btn">Submit</button>
+          <p id="formMessage" style="display:none; margin-top:1rem; color:green; font-weight:600;">
+            ✅ Your message has been sent successfully!
+          </p>
+        </form>
+
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <h3>Get in Touch</h3>
+          <p><i class="fas fa-phone"></i> +92 321 2639092</p>
+          <p><i class="fas fa-envelope"></i> abdullah.gojra1@gmail.com</p>
+          <p><i class="fas fa-map-marker-alt"></i> Gulshan Mehmood Colony, Street 2, Gojra, Pakistan</p>
+          <p>
+            Follow us:
+            <a href="https://facebook.com/digitalmarketinggojra" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/digitalgojra" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://linkedin.com/company/digitalmarketinggojra" target="_blank"><i class="fab fa-linkedin"></i></a>
+          </p>
+        </div>
+      </div>
+
+      <!-- Map -->
+      <div class="map-container">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!..." 
+          width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" 
+          aria-label="Gojra Office Location"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2026 Digital Marketing Gojra. All rights reserved.
+    <div>
+      <a href="#hero">Home</a> | 
+      <a href="#services">Services</a> | 
+      <a href="#portfolio">Portfolio</a> | 
+      <a href="#contact">Contact</a>
     </div>
+  </footer>
 
-  </div>
-</section>
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('nav-menu');
+      menu.classList.toggle('show');
+    }
 
-<section id="testimonials">
-  <h2>What Our Clients Say</h2>
-  <p class="section-subtitle">Trusted by businesses across Gojra</p>
+    // Optional: Simple Form Submit Success Message
+    document.getElementById('contactForm').addEventListener('submit', function(e){
+      const msg = document.getElementById('formMessage');
+      msg.style.display = 'block';
+      setTimeout(()=>{ msg.style.display='none'; }, 5000);
+    });
+  </script>
 
-  <div class="testimonials-grid">
-    <div class="testimonial-card">
-      <p>Digital Marketing Gojra transformed our online presence. Their SEO got us top rankings in local searches.</p>
-      <div class="testimonial-author">— Ahmed Khan, Local Shop Owner</div>
-    </div>
-
-    <div class="testimonial-card">
-      <p>Excellent Google Ads service. We saw immediate results and more bookings in Gojra.</p>
-      <div class="testimonial-author">— Fatima Ali, Restaurant Owner</div>
-    </div>
-
-    <div class="testimonial-card">
-      <p>Their website development team created a stunning, fast website that our customers love.</p>
-      <div class="testimonial-author">— Usman Butt, Service Provider</div>
-    </div>
-  </div>
-</section>
-
-<div class="cta-band">
-  <h2>Ready to Grow Your Business?</h2>
-  <p>
-    Whether you're a startup or an established business, we have the tools, expertise, 
-    and strategy to take your brand to the next level.
-   <!-- Modern Contact Form -->
-    <form id="contactForm" class="contact-form" action="https://formspree.io/f/xqkrzjze" method="POST">
-      <h3>Send Us a Message</h3>
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit" class="btn">Submit</button>
-      <p id="formMessage" style="display:none; margin-top:1rem; color:green; font-weight:600;">✅ Your message has been sent successfully!</p>
-     
-    <div class="contact-info">
-      <h3>Get in Touch</h3>
-      <p><i class="fas fa-phone"></i> +92 321 2639092</p>
-      <p><i class="fas fa-envelope"></i> abdullah.gojra1@gmail.com</p>
-      <p><i class="fas fa-map-marker-alt"></i> Gulshan Mehmood Colony, Street 2, Gojra, Pakistan</p>
-      <p>
-        Follow us:
-        <a href="https://facebook.com/digitalmarketinggojra" target="_blank"><i class="fab fa-facebook"></i></a>
-        <a href="https://twitter.com/digitalgojra" target="_blank"><i class="fab fa-twitter"></i></a>
-        <a href="https://linkedin.com/company/digitalmarketinggojra" target="_blank"><i class="fab fa-linkedin"></i></a>
-      </p>
-    </div>
-
-    <form class="contact-form" action="https://formspree.io/f/xqkrzjze" method="POST">
-      <h3>Send Us a Message</h3>
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit" class="btn">Submit</button>
-    </form>
-
-  </div>
-
-  <div class="map-container">
-    <iframe 
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3444.987654321!2d72.6754321!3d31.1534567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3915fa1b23456789%3A0xabcdef123456789!2sGulshan%20Mehmood%20Colony%2C%20St%202%2C%20Gojra!5e0!3m2!1sen!2s!4v1706956800000!5m2!1sen!2s" 
-      width="100%" 
-      height="350" 
-      style="border:0;" 
-      allowfullscreen="" 
-      loading="lazy">
-    </iframe>
-  </div>
-</section>
-
-<footer>
-  <p>&copy; 2026 Digital Marketing Gojra. All rights reserved.</p>
-</footer>
-
+</body>
+</html>
