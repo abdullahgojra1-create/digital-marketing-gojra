@@ -975,3 +975,77 @@
 
 </body>
 </html>
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p class="section-subtitle">Let’s build something great together</p>
+
+  <div class="contact-wrapper">
+
+    <!-- Contact Info -->
+    <div class="contact-info">
+      <h3>Get in Touch</h3>
+      <p><i class="fas fa-phone"></i> +92 321 2639092</p>
+      <p><i class="fas fa-envelope"></i> abdullah.gojra1@gmail.com</p>
+      <p><i class="fas fa-map-marker-alt"></i> Gulshan Mehmood Colony, Street 2, Gojra, Pakistan</p>
+      <p>
+        Follow us:
+        <a href="https://facebook.com/digitalmarketinggojra" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com/digitalgojra" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://linkedin.com/company/digitalmarketinggojra" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </p>
+    </div>
+
+    <!-- Modern Contact Form -->
+    <form id="contactForm" class="contact-form" action="https://formspree.io/f/xqkrzjze" method="POST">
+      <h3>Send Us a Message</h3>
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Submit</button>
+      <p id="formMessage" style="display:none; margin-top:1rem; color:green; font-weight:600;">✅ Your message has been sent successfully!</p>
+    </form>
+
+  </div>
+
+  <!-- Google Map -->
+  <div class="map-container">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3444.987654321!2d72.6754321!3d31.1534567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3915fa1b23456789%3A0xabcdef123456789!2sGulshan%20Mehmood%20Colony%2C%20St%202%2C%20Gojra!5e0!3m2!1sen!2s!4v1706956800000!5m2!1sen!2s" 
+      width="100%" 
+      height="350" 
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy">
+    </iframe>
+  </div>
+</section>
+
+<script>
+  // Form Submission with Success Message
+  const contactForm = document.getElementById('contactForm');
+  const formMessage = document.getElementById('formMessage');
+
+  contactForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const formData = new FormData(contactForm);
+
+    fetch(contactForm.action, {
+      method: 'POST',
+      body: formData,
+      headers: { 'Accept': 'application/json' }
+    }).then(response => {
+      if (response.ok) {
+        formMessage.style.display = 'block';
+        contactForm.reset();
+        setTimeout(() => { formMessage.style.display = 'none'; }, 5000);
+      } else {
+        response.json().then(data => {
+          alert("Oops! There was a problem submitting your form: " + (data.errors ? data.errors.map(e => e.message).join(", ") : ""));
+        })
+      }
+    }).catch(error => {
+      alert("Oops! There was a problem submitting your form.");
+    });
+  });
+</script>
